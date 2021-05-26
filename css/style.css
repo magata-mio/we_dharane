@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+body {
+  font-family: 'Roboto',sans-serif;
+}
+
+.f-thin {
+  font-weight: 300;
+}
+
+.f-s1 {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.f-s2 {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.f-s3 {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu-right {
+  right: 0;
+}
+
+.dropdown-menu-mega {
+  width: 1200px;
+}
+
+.dropdown-menu-full {
+  width: 100vw;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .dropdown-menu-mega {
+    width: 100%;
+  }
+}
+
+nav {
+  font-weight: 500;
+  background-color: rgba(245, 245, 245, 0.363);
+  -webkit-box-shadow: 0px 1px 12px whitesmoke;
+          box-shadow: 0px 1px 12px whitesmoke;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  color: #212121;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .navbar-collapse {
+    background-color: whitesmoke;
+    padding-left: 10px;
+  }
+}
+
+.banner .carousel-inner .carousel-item img {
+  height: 80vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner .carousel-inner .carousel-item img {
+    height: 40vh;
+  }
+}
+
+.category .container .boxs {
+  position: relative;
+}
+
+.category .container .boxs .box {
+  width: 260px;
+  height: auto;
+  border: 1px solid #673AB7;
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.category .container .boxs .box img {
+  height: 180px;
+}
+
+.category .container .boxs .box .text {
+  padding: 5px 0;
+  background-color: #4CAF50;
+  width: 100%;
+}
+
+.category .container .boxs .box .text h1 {
+  color: #FFFFFF;
+}
+
+.category .container .boxs .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.category .container .boxs .owl-nav button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #4CAF50;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.category .container .boxs .owl-nav button span {
+  color: #FFFFFF;
+  position: relative;
+  bottom: 5px;
+  left: 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .category .container .boxs .box {
+    width: 90%;
+  }
+  .category .container .boxs .box img {
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .category .container .boxs .box {
+    width: 100%;
+  }
+  .category .container .boxs .box img {
+    height: 220px;
+  }
+}
+
+.about_us .more {
+  padding-bottom: 5px;
+}
+
+.about_us .more a {
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  padding: 7px 13px;
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.about_us .more a:hover {
+  background: #4CAF50;
+  color: #FFFFFF;
+}
+
+.notices .container .post .all_post {
+  height: 520px;
+  overflow-y: auto;
+}
+
+.notices .container .post .all_post::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notices .container .post .all_post::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: seagreen;
+}
+
+.notices .container .post .all_post .news .image img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.notices .container .post .all_post .news .content {
+  padding-left: 10px;
+}
+
+.notices .container .notice .card-body {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.notices .container .notice .card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notices .container .notice .card-body::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: seagreen;
+}
+
+.notices .container .notice .card-body .single {
+  padding: 15px 10px;
+  border-bottom: 1px solid lightgreen;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.notices .container .notice .card-body .single:hover {
+  background-color: #e0e0e0;
+}
+
+.notices .container .event {
+  overflow: hidden;
+}
+
+.notices .container .event .scroll-up {
+  height: 150px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation: scroll-up 10s linear infinite;
+          animation: scroll-up 10s linear infinite;
+}
+
+@-webkit-keyframes scroll-up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.notices .container .event .scroll-up a .single:hover {
+  background-color: lightgrey;
+}
+
+.notices .container .topics .card .topics-list .list-group a .list-group-item {
+  color: brown;
+}
+
+.notices .container .topics .card .topics-list .list-group a .list-group-item:hover {
+  color: black;
+  background-color: lightgreen;
+}
+
+.latest_post .post .title {
+  position: relative;
+}
+
+.latest_post .post .title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  background-color: #512DA8;
+  width: 50px;
+}
+
+.latest_post .post .news .image img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latest_post .post .news .content {
+  padding-left: 10px;
+}
+
+.latest_post .post .detail .img {
+  width: 100%;
+  height: 250px;
+}
+
+.latest_post .post .detail .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.latest_post .post .detail .content {
+  height: 150px;
+}
+
+.gallery .container .images .img img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery .container .images .img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+footer .social .social-link {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #212121;
+}
+
+footer .social .social-link:hover a {
+  font-size: 18px;
+}
+
+footer .social .social-link a {
+  color: #D1C4E9;
+}
+
+footer .title {
+  position: relative;
+}
+
+footer .title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  background-color: #512DA8;
+  width: 50px;
+}
+/*# sourceMappingURL=style.css.map */
